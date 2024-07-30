@@ -1,6 +1,5 @@
 "use client"
 import React, { ReactNode } from 'react';
-import { motion, useMotionTemplate, useMotionValue, animate } from 'framer-motion';
 import { Stars } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 
@@ -12,7 +11,7 @@ export const StarryNight: React.FC<StarryNightProps> = ({ children }) => {
   return (
     <section className='relative overflow-hidden h-full w-full '>
       <div className='z-10 h-full w-full relative'>
-        <div className='absolute inset-0 bg-black opacity-50'></div>
+        <div className='absolute inset-0 opacity-50'></div>
         <div className='relative z-20'>
           {children}
         </div>
